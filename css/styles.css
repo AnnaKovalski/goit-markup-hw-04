@@ -321,15 +321,14 @@ img {
   background-color: #ffffff;
 }
 .text-wraper {
-  padding: 30px 10px;
+  padding: 30px 32px;
 }
 .social-media {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-width: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+  
 }
 .social-media-item {
   align-items: center;
@@ -385,6 +384,7 @@ img {
   align-items: center;
   justify-content: space-between;
   min-width: 1170px;
+  
 }
 .clients-list-link {
   display: flex;
@@ -392,6 +392,10 @@ img {
   align-items: center;
   width: 170px;
   height: 90px;
+  /*border: 1px solid #afb1b8;
+  border-radius: 4px;*/
+}
+.clients-list-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -422,13 +426,16 @@ img {
   width: 88px;
   height: 45px;
 }
-.clients-list-link:hover .common,
-.clients-list-link:focus .common,
-.clients-list-link:hover,
-.clients-link-link:focus {
-  border: 1px solid var(--acent-color);
-  fill: var(--acent-color);
+
+.clients-list-item:hover,
+.clients-link-item:focus {
+   border: 1px solid var(--acent-color);
+  
 }
+.clients-list-link:hover .common,
+ .clients-list-link:focus .common {
+   fill: var(--acent-color);
+ }
 
 /*footer*/
 .footer {
@@ -451,8 +458,7 @@ img {
 }
 .footer .container {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  align-items: baseline;
 }
 .footer-wraper:not(:last-child) {
   margin-right: 70px;
